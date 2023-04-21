@@ -1,0 +1,35 @@
+{
+    "general-info": [
+        {
+            "name": "Coastal Vietnam",
+            "itishort":"Da Nang - Hoi An",
+            "duration": "4 days",
+            "theme":"Beach and Culture",
+            "description-long": "Experience the best of Vietnam's coastal towns on this 4-day tour. Start in Da Nang and explore the city's rich history and culture, including the famous Marble Mountains and the Cham Museum. Next, head to the charming town of Hoi An, known for its well-preserved architecture, delicious food, and beautiful beaches. Take a walking tour of the town and visit some of its famous landmarks such as the Japanese Covered Bridge and the Phung Hung Ancient House. Enjoy a cooking class and learn how to make traditional Vietnamese dishes. End the tour with a relaxing day on the beach and some last-minute shopping before transferring to the airport for your departure flight.",
+            "price": "800",
+            "persons": "2"
+        }
+    ],
+    "itinerary":[
+        {
+            "daynumber":"1",
+            "dayshort": "Da Nang City Tour",
+            "dayfull":"Today, we will start our tour with a visit to the Marble Mountains, a group of five marble and limestone hills that are home to several Buddhist sanctuaries. Next, we will visit the Cham Museum, which houses the largest collection of Cham artifacts in the world. In the afternoon, we will have some free time to explore the city on our own."
+        },
+        {
+            "daynumber":"2",
+            "dayshort": "Da Nang - Hoi An",
+            "dayfull":"Today, we will take a short drive to Hoi An, a charming town in the central of Vietnam. We will check into our hotel and have some free time to explore the town on our own."
+        },
+        {
+            "daynumber":"3",
+            "dayshort": "Hoi An Walking Tour and Cooking Class",
+            "dayfull":"Today, we will take a walking tour of Hoi An and visit some of its famous landmarks such as the Japanese Covered Bridge and the Phung Hung Ancient House. In the afternoon, we will take a cooking class and learn how to make traditional Vietnamese dishes."
+        },
+        {
+            "daynumber":"4",
+            "dayshort": "Hoi An - Departure",
+            "dayfull":"Today, we will have some free time to relax on the beach or do some last-minute shopping before transferring to the airport for our departure flight."
+        }    
+    ]
+}

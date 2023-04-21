@@ -1,0 +1,49 @@
+{
+    "general-info": [
+        {
+            "name": "Ancient Vietnam",
+            "itishort":"Hanoi-Hoi An",
+            "duration": "7 days",
+            "theme":"History Discover",
+            "description-long": "Discover the ancient history of Vietnam and explore its rich culture. Vietnam is located on Southeast Asia region and well known for many of different landscapes and the unique cultural attractions. Unlike many other tours offered by Asia King Travel, this Vietnam Discovery tour brings you to beautiful places in different geographical regions and gives you opportunities to be in touch with locals, experience attractive activities, and enjoy delicious food. Let yourself be stunned by the stunning landscape of Thien Duong and Phong Nha cave after a truly experience on a train with the locals. Then on to the breathtaking beauty of more than 2000 islands rising from emerald water of Halong Bay recognized World Heritage Site by UNESCO limestone. Leaving these natural wonders behind, you will reveal the most exciting of Vietnam’s cities consist of charming Hanoi, dynamic Saigon, historic Hue and tranquil Hoian.",
+            "price": "1000",
+            "persons": "2"
+        }
+    ],
+    "itinerary":[
+        {
+            "daynumber":"1",
+            "dayshort": "Hanoi full day city tour",
+            "dayfull":"Today, we enjoy a full day city tour starting with the Ho Chi Minh Complex. This famous site contains the mausoleum of the nation’s founder Ho Chi Minh. Our first stop is to visit the mausoleum of the nation’s founder Ho Chi Minh. Located in the center of Ba Dinh Square, this is the most important monument of Vietnam in which Ho Chi Minh’s body is preserved. This site only opens on Tuesday to Thursday and weekends from 08:00 – 11:00. The next destination is the Presidential Palace and the Ho Chi Minh’s house on stilts. The Ho Chi Minh’s stilt house was completed on May 19th, 1958 as a birthday present for uncle Ho and becomes a symbol of his simple life."
+        },
+        {
+            "daynumber":"2",
+            "dayshort": "Hanoi - Halong Bay",
+            "dayfull":"Today, we will depart early in the morning for Halong Bay. Halong Bay is one of the most beautiful bays in the world, and is located in the northeastern part of Vietnam. We will take a boat trip to explore the limestone islands and caves. We will also have a chance to swim in the clear blue water. After a full day of exploring, we will return to Hanoi in the late afternoon."
+        },
+        {
+            "daynumber":"3",
+            "dayshort": "Hanoi - Sapa",
+            "dayfull":"Today, we will take an overnight train to Sapa. Sapa is a mountainous town in the northwest of Vietnam, known for its beautiful rice terraces and ethnic minority villages. We will have a full day of trekking and homestay in a local village."
+        },
+        {
+            "daynumber":"4",
+            "dayshort": "Sapa - Lao Cai",
+            "dayfull":"Today, we will continue our trekking in Sapa and visit some more ethnic minority villages. In the afternoon, we will take a bus back to Lao Cai and spend the night there."
+        },
+        {
+            "daynumber":"5",
+            "dayshort": "Lao Cai - Hanoi",
+            "dayfull":"Today, we will take an early morning train back to Hanoi. In the afternoon, we will have some free time to explore the city on our own."
+        },
+        {
+            "daynumber":"6",
+            "dayshort": "Hanoi - Hoi An",
+            "dayfull":"Today, we will take a flight to Hoi An. Hoi An is a charming town in the central of Vietnam, known for its well-preserved architecture, delicious food, and beautiful beaches. We will have a walking tour of the town to explore its old streets and temples."
+        },
+        {
+            "daynumber":"7",
+            "dayshort": "Hoi An - Departure",
+            "dayfull":"Today, we will have some free time to relax on the beach or do some last-minute shopping before transferring to the airport for our departure flight."
+        }    
+]}

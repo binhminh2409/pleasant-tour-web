@@ -1,0 +1,213 @@
+[
+      {
+        "image": "img/package-2.jpg",
+        "destination": "Vietnam",
+        "duration": "7 days",
+        "persons": "2",
+        "name": "Beach Getaway",
+        "description": "Relax on the beautiful beaches of Vietnam",
+        "theme":"Beach Tour",
+        "itishort":"Da Nang",
+        "price": "1200"
+      },
+      {
+        "image": "img/package-3.jpg",
+        "destination": "Vietnam",
+        "duration": "10 days",
+        "persons": "4",
+        "name": "Beach Adventure",
+        "description": "Explore the beaches and islands of Vietnam",
+        "theme":"Beach Tour",
+        "itishort":"Phu Quoc",
+        "price": "2000"
+      },
+      {
+        "image": "img/package-1.jpg",
+        "destination": "Vietnam",
+        "duration": "7 days",
+        "persons": "2",
+        "name": "Ancient Vietnam",
+        "description": "Discover the ancient history of Vietnam and explore its rich culture",
+        "theme":"History Discover",
+        "itishort":"Hoi An",
+        "price": "1000"
+      },
+      {
+        "image": "img/package-5.jpg",
+        "destination": "Vietnam",
+        "duration": "10 days",
+        "persons": "4",
+        "name": "Vietnam War History",
+        "description": "Experience the history of the Vietnam War and its impact on the country",
+        "theme":"History Discover",
+        "itishort":"Ha Noi",
+        "price": "1500"
+      },
+      {
+        "image": "img/package-3.jpg",
+        "destination": "Vietnam",
+        "duration": "5 days",
+        "persons": "4",
+        "name": "Forest Adventure",
+        "description": "Explore the lush rainforests of Dong Hoi",
+        "theme":"Forest Trip",
+        "itishort":"Dong Hoi",
+        "price": "800"
+        },
+        {
+        "image": "img/package-4.jpg",
+        "destination": "Vietnam",
+        "duration": "10 days",
+        "persons": "6",
+        "name": "Viet Trek",
+        "description": "Trek through the mountains and discover the ancient Vietnam civilization",
+        "theme":"Trekking",
+        "itishort":"Ha Giang",
+        "price": "1500"
+        },
+        {
+        "image": "img/package-5.jpg",
+        "destination": "Vietnam",
+        "duration": "14 days",
+        "persons": "8",
+        "name": "Palace Explorer",
+        "description": "Visit the Palace of Thang Long and experience the rich culture and history",
+        "theme":"Palace",
+        "itishort":"Hanoi",
+        "price": "2000"
+        },
+        {
+        "image": "img/package-6.jpg",
+        "destination": "China",
+        "duration": "7 days",
+        "persons": "2",
+        "name": "Palace Discovery",
+        "description": "Explore the palaces of China",
+        "theme":"Palace Tour",
+        "itishort":"Beijing",
+        "price": "1500"
+        },
+        {
+        "image": "img/package-7.jpg",
+        "destination": "China",
+        "duration": "5 days",
+        "persons": "3",
+        "name": "Forest Adventure",
+        "description": "Experience the beauty of the Chinese forests",
+        "theme":"Forest Trip",
+        "itishort":"Yunnan",
+        "price": "800"
+        },
+        {
+        "image": "img/package-8.jpg",
+        "destination": "China",
+        "duration": "10 days",
+        "persons": "4",
+        "name": "Trekking in the Himalayas",
+        "description": "Trek through the Himalayas in China",
+        "theme":"Trekking",
+        "itishort":"Tibet",
+        "price": "2000"
+        },
+        {
+        "image": "img/package-9.jpg",
+        "destination": "China",
+        "duration": "8 days",
+        "persons": "2",
+        "name": "History Discovery",
+        "description": "Learn about the rich history of China",
+        "theme":"History Discover",
+        "itishort":"Xian",
+        "price": "1000"
+        },
+        {
+          "image": "img/package-10.jpg",
+          "destination": "Thailand",
+          "duration": "15 days",
+          "persons": "4",
+          "name": "Ancient Sukhothai",
+          "description": "Discover the ancient history of Thailand and explore its rich culture",
+          "theme":"History Discover",
+          "itishort":"Sukhothai",
+          "price": "1500"
+        },
+        {
+          "image": "img/package-11.jpg",
+          "destination": "Thailand",
+          "duration": "7 days",
+          "persons": "2",
+          "name": "Thailand Beach Escape",
+          "description": "Relax on the beautiful beaches of Thailand",
+          "theme":"Beach Tour",
+          "itishort":"Phuket",
+          "price": "1000"
+          },
+          {
+          "image": "img/package-12.jpg",
+          "destination": "Thailand",
+          "duration": "5 days",
+          "persons": "2",
+          "name": "Thailand Palace Experience",
+          "description": "Explore the grand palaces of Thailand",
+          "theme":"Palace",
+          "itishort":"Bangkok",
+          "price": "800"
+          },
+          {
+          "image": "img/package-13.jpg",
+          "destination": "Thailand",
+          "duration": "10 days",
+          "persons": "4",
+          "name": "Thailand Trekking Adventure",
+          "description": "Trek through the beautiful jungles of Thailand",
+          "theme":"Trekking",
+          "itishort":"Chiang Mai",
+          "price": "1500"
+          },
+          {
+          "image": "img/package-14.jpg",
+          "destination": "Thailand",
+          "duration": "4 days",
+          "persons": "2",
+          "name": "Thailand Forest Retreat",
+          "description": "Escape to the peaceful forests of Thailand",
+          "theme":"Forest Trip",
+          "itishort":"Khao Yai",
+          "price": "600"
+          },
+          {
+          "image": "img/package-15.jpg",
+          "destination": "Thailand",
+          "duration": "8 days",
+          "persons": "2",
+          "name": "Thailand History Discovery",
+          "description": "Discover the rich history of Thailand",
+          "theme":"History Discover",
+          "itishort":"Ayutthaya",
+          "price": "1100"
+          },          
+          {
+          "image": "img/package-16.jpg",
+          "destination": "Laos",
+          "duration": "7 days",
+          "persons": "2",
+          "name": "Laos Beach Retreat",
+          "description": "Relax on the secluded beaches of Laos",
+          "theme":"Beach Tour",
+          "itishort":"Si Phan Don",
+          "price": "1000"
+          },
+          {
+          "image": "img/package-17.jpg",
+          "destination": "Laos",
+          "duration": "5 days",
+          "persons": "2",
+          "name": "Laos Royal Palace Tour",
+          "description": "Explore the historic palaces of Laos",
+          "theme":"History Discover",
+          "itishort":"Si Phan Don",
+          "price": "1000"
+          }
+  ]
+  
+  

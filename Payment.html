@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One" rel="stylesheet"> 
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!--CSS bootstrap and customized style-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!--Font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<!-- Page header -->
+<div class="container-fluid p-0 page-header" style="background-color: rgb(37, 61, 55);">
+    <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg">
+            <a href="Homepage.html" class="navbar-brand d-flex">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <h2 class="m-auto text-logo">PLEASANT<span class="text-white">TOUR</span></h2>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                  <div class="nav-item dropdown">
+                    <a href="Tour_List.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Destinations</a>
+                    <div class="dropdown-menu border-0">
+                        <a href="Tour_List.html" class="dropdown-item">Vietnam</a>
+                        <a href="Tour_List.html" class="dropdown-item">Thailand</a>
+                        <a href="Tour_List.html" class="dropdown-item">China</a>
+                        <a href="Tour_List.html" class="dropdown-item">Laos</a>
+                    </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="Tour_List.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Travel theme</a>
+                        <div class="dropdown-menu border-0">
+                            <a href="Tour_List.html" class="dropdown-item">Beach Tours</a>
+                            <a href="Tour_List.html" class="dropdown-item">Forest Trip</a>
+                            <a href="Tour_List.html" class="dropdown-item">Trekking</a>
+                            <a href="Tour_List.html" class="dropdown-item">Palace</a>
+                            <a href="Tour_List.html" class="dropdown-item">History discover</a>
+                        </div>
+                    </div>
+                    <a href="Blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="Contact.html" class="nav-item nav-link">Contact us</a>
+                    <a href="About.html" class="nav-item nav-link">About us</a>
+                </div>
+            </div>
+        </nav>
+<!-- Navbar End -->
+
+ <!-- Intro Start-->
+ <div class="container-fluid p-0" id="intro-container">
+      <div class="intro-inner">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px">
+                <h2 class="display-3 text-white mb-md-4" style="font-size: 4rem;">Make Your Payment</h2>
+                <a href="Tour_Personalize.html" class="btn btn-primary py-md-3 px-md-5 mt-2" id="btn-maketour">Make your own journey</a>    
+            </div>
+        </div>
+          <div class="carousel-item active">
+              <img class="w-100" src="img/intro-2.jpg" alt="Image">
+          </div>
+      </div>
+</div>
+<!-- Intro End -->
+
+
+ <!-- Search box Start -->
+ <div class="container-fluid searchbox-container mt-5">
+    <div class="container pb-5">
+        <div class="searchbox">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select searchbox-option justify-center">
+                                    <option selected>Destination</option>
+                                    <option value="1">Destination 1</option>
+                                    <option value="2">Destination 1</option>
+                                    <option value="3">Destination 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control justify-center datetimepicker-input searchbox-option" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date " id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control justify-center datetimepicker-input searchbox-option" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select justify-center searchbox-option">
+                                    <option selected>Duration</option>
+                                    <option value="1">Duration 1</option>
+                                    <option value="2">Duration 1</option>
+                                    <option value="3">Duration 1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-block btn-searchbox" type="submit" style="height: 47px; margin-top: -2px;">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Search box End -->
+</div>
+<!-- Page header end-->
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb ml-3">
+    <a class="breadcrumb-item" href="Homepage.html">Homepage</a>
+    <a class="breadcrumb-item" href="Tour_Detail.html">Tour details</a>
+    <span class="breadcrumb-item active">Payment</span>
+</nav>
+
+<h2 class="payment-heading mx-3">
+    Make your payment
+</h2>
+
+  <!--Payment content -->
+  <div class="container-fluid payment">
+    <div class="row">
+        <!--left column-->
+        <!--Payment info column-->
+        <div class="col-lg-8 p-0 mx-3 left-column">
+            <!-- Info form -->
+            <form class="content-container info-form row">
+                <div class="col-lg-12">
+                <h3>Your details</h3> 
+                <p class="text-secondary mb-2">We will contact and work with this traveler</p>
+                </div>
+                <!--left side-->  
+                <div class="col-lg-6">
+                <table>
+                    <tr>
+                        <th>
+                        Full name<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>                      
+                        <th class="row m-auto">
+                            <select class="form-control" name="title" id="title" style="width: 30%;">
+                                <option value="1">Mr.</option>
+                                <option value="2">Mrs.</option>
+                                <option value="0">No title</option>
+                            </select>
+                            <input style="width: 70%;" type="text" class="form-control" name="first-name" id="first-name" aria-describedby="first-name" placeholder="First name">
+                            <span class="error" id="error-first-name"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="text" class="form-control" name="last-name" id="last-name" aria-describedby="last-name" placeholder="Last name">
+                            <span class="error" id="error-last-name"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Email<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Email adress">
+                            <span class="error" id="error-email"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="email" class="form-control" name="confirm-email" id="confirm-email" aria-describedby="confirm-email" placeholder="Confirm your email adress">
+                            <span class="error" id="error-confirm-email"></span>
+                        </th>
+                    </tr>
+                </table>
+                </div>
+                <!--left side end-->  
+
+                <!--right side-->
+                <div class="col-lg-6">
+                    <table>
+                        <tr>
+                            <th>
+                            Date of birth<span style="color: red;">*</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="date" id="datepicker" data-target-input="nearest" inline="true">
+                                <input id="dob" type="text" class="form-control datetimepicker-input justify-center" placeholder="Date of Birth" data-target="#datepicker" data-toggle="datetimepicker"/>
+                                <span class="error" id="error-dob"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Nationality<span style="color: red;">*</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                    <select class="form-control" name="nationality" id="nationality">
+                                      <option value="" disabled selected>Select your country</option>
+                                    </select> 
+                                    <span class="error" id="error-nationality"></span>                         
+                            </th>    
+                        </tr>
+                        <tr>
+                            <th>
+                            Contact number<span style="color: red;">*</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="row">
+                                <select class="form-control" name="dial-code" id="dial-code">
+                                    <option value="" disabled selected>--</option>
+                                  </select>
+                                <input type="text" class="form-control" name="contact-number" id="contact-number" placeholder="Your phone number">
+                                <span class="error" id="error-contact-number"></span>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                    <!--right side end-->  
+            </form>
+            <!-- Info form end -->
+
+        <!-- Payment form -->
+        <form class="content-container info-form row">
+                <div class="col-lg-12">
+                <h3>Payment</h3> 
+                <p class="text-secondary mb-2">This is a secure and SSL encrypted payment via Stripe. Your credit card details are safe!</p>
+                </div>
+                <!--left side-->  
+                <div class="col-lg-6">
+                <table>
+                    <tr>
+                        <th>
+                        Payment method<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select class="form-control" name="payment-method" id="payment-method">
+                                <option>Credit card</option>
+                                <option>Paypal</option> 
+                            </select>
+                            <span class="error" id="error-payment-method"></span>
+                        </th>
+                    </tr>
+                      
+                    <tr>
+                        <th>
+                            <img src="img/payment-method.png" alt="" height="30px">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Name on card<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="text" class="form-control" name="card-name" id="card-name" placeholder="Name on card">
+                            <span class="error" id="error-card-name"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Card number<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Your card number">
+                            <span class="error" id="error-card-number"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Expiry date<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input class="form-control" type="month" id="exp-date" name="exp-date"> 
+                            <span class="error" id="error-card-exp"></span>                       
+                        </th>
+                    </tr>
+                </table>
+                </div>
+                <!--left side end-->  
+
+                <!--right side-->
+                <div class="col-lg-6">
+                    <table>
+                        <tr>
+                            <th>
+                            Apply promo code
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="row m-auto">
+                            <input type="text" class="form-control" name="promo-code" id="promo-code" placeholder="Your promo code" style="width:80%">
+                            <button class="btn-primary" type="button" id="apply-code" style="width:20%">Apply</button>
+                            <span class="error" id="error-promo"></span>                       
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                            <input type="checkbox" name="promo-check" id="promo-check">
+                            <label for="promo-check">I have a discount code</label>
+                             </th>
+                        </tr>
+                    </table>
+                </div>
+                    <!--right side end-->
+                    <div class="col-lg-12 price text-center" id="payment-final">
+                        <hr>
+                            Total Price: 
+                        <p class="display-4" id="og-price-text">US$<span id="og-price">1350</span></p>
+                        <span class="display-4" id="promo-price"></span>
+                        <hr>
+                        <!-- Terms&cond -->
+                        <div class="termscond-container mb-4">
+                        <input type="checkbox" name="termscond" id="termscond">
+                        <label style="width:auto" for="termscond">I accept the <a href=""><u>data policy</u></a> and the <a href=""><u>terms and conditions</u></a></label>
+                        <span class="error" id="error-termscond"></span>
+                        </div>
+                        <!-- Terms&cond end -->
+                        <!-- Button Pay + Trigger modal -->
+                        <button type="submit" data-toggle="modal" data-target="#payment-modal"
+                        style="border-radius: .5rem; height:auto" id="paynow" name="paynow" class="btn btn-book promo mb-3">
+                            Pay now
+                        </button>
+                        <!-- Button book end -->           
+                    </div>
+            </form>  
+            <!-- Payment form end -->  
+</div>
+<!--left column end-->  
+
+<!-------------right column------------->
+        <div class="col-lg-3 right-column p-0 mx-auto">
+        <div class="booking-table sticky">
+         <!--Booking info table-->
+        <img class="img-fluid" src="img/package-1.jpg" alt="">
+        <div class="p-2">
+        <div class="h3 package-name text-center">Northern Vietnam in depth</div>
+        <table id="tour-info">
+        <tr>
+            <td>
+                <i class="fa fa-map-marker-alt"></i>
+            </td>
+            <td>
+                Hanoi - Ha Giang - Sapa
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i class="fa fa-calendar"></i>
+            </td>
+            <td>
+                Date: from 1/1/2022 to 4/1/2022
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i class="fa fa-hourglass"></i>
+            </td>
+            <td>
+                Duration: 3 days
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <i class="fa fa-users"></i>
+            </td>    
+            <td>
+                travelers: 2
+            </td>
+        </tr>
+        </table>
+        </div>      
+        <!--sticky end-->
+        </div>
+        <!--right column end-->
+    </div>
+</div>
+    <!--row end-->
+</div>
+
+<!-- Footer Start -->
+<div class="container-fluid py-5 px-sm-3 px-lg-5 footer-container" style="margin-top: 90px;">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+                <h2 class="text-logo">PLEASANTTOUR</h2>
+            </a>
+            <p class="text-white">Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+            <h6 class="text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start social-media">
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Menu</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                <a class="mb-2" href="About.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                <a class="mb-2" href="#destinations"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                <a class="mb-2" href="#services"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="mb-2" href="#regular-tour"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="mb-2" href="#testimonials"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Destinations</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Vietnam</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>China</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Travel theme</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Beach Tours</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Forest Trip</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Trekking</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Palace</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>History discover</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5 text-white">
+            <h5 class="text-uppercase mb-4 contact-footer" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>8A Ton That Thuyet, My Dinh, Vietnam</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>pleasanttour@gmail.com</p>
+            <h6 class="text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn px-2 newsletter-button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+   

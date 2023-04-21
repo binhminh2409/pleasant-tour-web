@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">   
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!--Font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!-- Page header -->
+<div class="container-fluid p-0 page-header" style="background-color: rgb(37, 61, 55);">
+    <!--Navbar Start-->
+        <nav class="navbar navbar-expand-lg">
+            <a href="Homepage.html" class="navbar-brand d-flex">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <h2 class="m-auto text-logo">PLEASANT<span class="text-white">TOUR</span></h2>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                  <div class="nav-item dropdown">
+                    <a href="Tour_List.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Destinations</a>
+                    <div class="dropdown-menu border-0">
+                        <a href="Tour_List.html" class="dropdown-item">Vietnam</a>
+                        <a href="Tour_List.html" class="dropdown-item">Thailand</a>
+                        <a href="Tour_List.html" class="dropdown-item">China</a>
+                        <a href="Tour_List.html" class="dropdown-item">Laos</a>
+                    </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="Tour_List.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Travel theme</a>
+                        <div class="dropdown-menu border-0">
+                            <a href="Tour_List.html" class="dropdown-item">Beach Tours</a>
+                            <a href="Tour_List.html" class="dropdown-item">Forest Trip</a>
+                            <a href="Tour_List.html" class="dropdown-item">Trekking</a>
+                            <a href="Tour_List.html" class="dropdown-item">Palace</a>
+                            <a href="Tour_List.html" class="dropdown-item">History discover</a>
+                        </div>
+                    </div>
+                    <a href="Blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="Contact.html" class="nav-item nav-link">Contact us</a>
+                    <a href="About.html" class="nav-item nav-link">About us</a>
+                </div>
+            </div>
+        </nav>
+<!-- Navbar End -->
+
+ <!-- Intro Start-->
+ <div class="container-fluid p-0" id="intro-container">
+      <div class="intro-inner">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px">
+                <h2 class="display-3 text-white mb-md-4" style="font-size: 4rem;">Contact us</h2>
+                <a href="Tour_Personalize.html" class="btn btn-primary py-md-3 px-md-5 mt-2" id="btn-maketour">Make your own journey</a>    
+            </div>
+        </div>
+          <div class="carousel-item active">
+              <img class="w-100" src="img/intro-1.jpg" alt="Image">
+          </div>
+      </div>
+</div>
+<!-- Intro End -->
+
+
+ <!-- Search box Start -->
+ <div class="container-fluid searchbox-container mt-5">
+    <div class="container pb-5">
+        <div class="searchbox">
+            <div class="row align-items-center" style="min-height: 60px;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select searchbox-option justify-center">
+                                    <option selected>Destination</option>
+                                    <option value="1">Destination 1</option>
+                                    <option value="2">Destination 1</option>
+                                    <option value="3">Destination 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date" id="date1" data-target-input="nearest">
+                                    <input type="text" class="form-control justify-center datetimepicker-input searchbox-option" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <div class="date " id="date2" data-target-input="nearest">
+                                    <input type="text" class="form-control justify-center datetimepicker-input searchbox-option" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 mb-md-0">
+                                <select class="custom-select justify-center searchbox-option">
+                                    <option selected>Duration</option>
+                                    <option value="1">Duration 1</option>
+                                    <option value="2">Duration 1</option>
+                                    <option value="3">Duration 1</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-block btn-searchbox" type="submit" style="height: 47px; margin-top: -2px;">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Search box End -->
+</div>
+<!-- Page header end-->
+
+
+<div  style="background:rgb(37, 61, 55)">
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb ml-3">
+    <a class="breadcrumb-item" style="color:rgb(200, 184, 138)" href="Homepage.html">Homepage</a>
+    <span class="breadcrumb-item active">About us</span>
+</nav>
+
+<!-- Contact us start -->
+<!-- Address -->
+<div class="container-fluid" id="contact">
+    <div class="container pb-3">
+        <div class="text-center pb-3">
+            <h6 class="text-uppercase product-type" style="letter-spacing: 5px;">Location</h6>
+            <h2 class="header-1" style="color:rgb(200, 184, 138)">Where are we</h2>
+        </div>
+    </div>
+    <div class="container pb-5" style="color:white">
+    <h3>Address:</h3>
+    <p><i class="fa fa-map-marker-alt mr-2"></i>8A Ton That Thuyet, My Dinh, Vietnam</p>
+               <div class="content-container text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4210.438094841269!2d105.7812179533946!3d21.029186717169118!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b3285df81f%3A0x97be82a66bbe646b!2sDetech%20Building!5e0!3m2!1sen!2s!4v1673487672244!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+</div>
+</div>
+<!-- Address end -->
+
+
+<!-- Email -->
+<div class="container-fluid py-5" style="background-color: rgba(200, 184, 138, 1);">
+    <div class="container">
+        <div class="row">
+        <!--Send message form column-->
+            <div class="col-lg-7 mx-auto py-3">
+        <div class="col-lg-8 mx-auto px-0">
+            <h2 class="mb-3 header-1">Send us a message</h1>
+            <!-- Message form -->
+            <form class="content-container info-form row" id="message">
+                <!--left side-->  
+                <div class="col-lg-6 left-side">
+                <table>
+                    <tr>
+                        <th>
+                        Full name<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>                      
+                        <th class="row m-auto">
+                            <input type="text" class="form-control" name="first-name" id="first-name" aria-describedby="first-name" placeholder="Your name here">
+                            <span class="error" id="error-first-name"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Email<span style="color: red;">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="email" class="form-control" name="email" id="email" aria-describedby="email" placeholder="Email adress">
+                            <span class="error" id="error-email"></span>
+                        </th>
+                    </tr>
+                </table>
+                </div>
+                <!--left side end-->  
+
+                <!--right side-->
+                <div class="col-lg-6 right-side">
+                    <table>
+                        <tr>
+                            <th>
+                            Contact number
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="text" class="form-control" name="contact-number" id="contact-number" placeholder="Your phone number">
+                                <span class="error" id="error-contact-number"></span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                            Subject
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <select class="form-control" name="payment-method" id="payment-method">
+                                    <option>Unknown</option>
+                                    <option>Pricing</option> 
+                                    <option>Product</option> 
+                                    <option>Terms&conditions</option> 
+                                </select>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                    <!--right side end--> 
+
+                    <!-- Message content -->
+                    <div class="container-fluid p-0" style="margin:.3em 15px">
+                    <label for="message-content" style="font-weight: bold;">Your message</label>
+                    <textarea class="form-control" 
+                    name="message-content" id="message-content" rows="3" placeholder="Your message content"></textarea>
+                    <span class="error" id="error-message-content"></span>
+                    <button type="submit" name="submit-message" id="submit-message" 
+                    class="btn btn-searchbox btn-block mx-auto mt-3">Sent</button>
+                    </div> 
+                    <!-- Message content end -->
+
+            </form>
+            <!-- Message form end -->
+        </div>
+    </div>
+    <!-- Message form column end -->
+
+    <!-- Other info column -->
+            <div class="col-lg-5" style="display: grid;place-items: center;" id="other">
+                <div class="container-fluid py-3 my-3" style="background-color: rgb(37, 61, 55); border-radius: 10px;">
+                <h2 class="header-1" style="color: rgb(200, 184, 138);">Our contact</h2>
+                <div class="container py-1 px-0" style="color: rgb(200, 184, 138);">
+                    <p>Email:
+                    <a style="color: rgb(200, 184, 138);" href="mailto:pleasanttour@gmail.com">pleasanttour@gmail.com</a>
+                    </p>
+                    <p>Other platforms:</p>
+                    <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+            </div>
+    <!-- Other info column end -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer Start -->
+<div class="container-fluid py-5 px-sm-3 px-lg-5 footer-container">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-6 mb-5">
+            <a href="" class="navbar-brand">
+                <h2 class="text-logo">PLEASANTTOUR</h2>
+            </a>
+            <p class="text-white">Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+            <h6 class="text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+            <div class="d-flex justify-content-start social-media">
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline btn-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Menu</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                <a class="mb-2" href="About.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                <a class="mb-2" href="#destinations"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                <a class="mb-2" href="#services"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="mb-2" href="#regular-tour"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="mb-2" href="#testimonials"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Destinations</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Vietnam</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>China</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5">
+            <h5 class="text-uppercase mb-4" style="letter-spacing: 5px;">Travel theme</h5>
+            <div class="d-flex flex-column justify-content-start footer-menu-items">
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Beach Tours</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Forest Trip</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Trekking</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>Palace</a>
+                <a class="mb-2" href="Tour_List.html"><i class="fa fa-angle-right mr-2"></i>History discover</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-5 text-white">
+            <h5 class="text-uppercase mb-4 contact-footer" style="letter-spacing: 5px;">Contact Us</h5>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>8A Ton That Thuyet, My Dinh, Vietnam</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>pleasanttour@gmail.com</p>
+            <h6 class="text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn px-2 newsletter-button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
+   

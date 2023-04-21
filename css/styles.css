@@ -1,0 +1,1482 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  body {
+    margin: 0;
+    font: 400 15px/1.5 "Julius sans one";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #F3F3F3;
+  }
+.font-julius {
+  font-family: "Julius Sans One";
+}
+
+.font-poppins {
+  font-family: "Poppins";
+}
+
+/*Breadcrumb*/
+.breadcrumb{
+  background: transparent;
+}
+
+.breadcrumb-item{
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+}
+
+#logo{
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+/*****************************************************************************************************************************************/
+/*Homepage*/
+/*****************************************************************************************************************************************/
+
+/*Navbar Modification*/
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+  }
+
+  .navbar-expand-lg{
+    background: linear-gradient(rgba(41, 76, 70), rgba(41, 76, 70, 0.61));
+  }
+  .text-logo{
+    font-weight: 500;
+    color: rgba(200, 184, 138, 1);
+  }
+
+
+  .navbar .container,
+  .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  
+  .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+
+  }
+  
+  .navbar-nav .nav-link,.dropdown-item, .nav-item::after {
+    color: white;
+  }
+
+  .dropdown-item:active{
+    background-color: white;
+    color: white;
+  }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    background: rgba(41, 76, 70);
+    color:white;
+  }
+
+  .nav-link:hover{
+    color: rgb(170, 157, 118)!important;
+    border: 0;
+  }
+
+  .navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  
+  .navbar-toggler:hover, .navbar-toggler:focus {
+    text-decoration: none;
+  }
+
+  
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  @media (max-width:500px){
+    .navbar-expand-lg{
+      background: rgba(41, 76, 70);
+    }
+  }
+
+
+  /*Introduction Modification*/
+  #intro-container {
+    margin-top: -90px;
+  }
+
+  @media (max-width:600px){
+    #intro-container h2{
+      font-size: 2em!important;
+    }
+    .intro-inner {
+    margin-top:5rem;
+    }
+  }
+
+  .intro-inner::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .intro-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 750px;
+  }
+
+  .intro-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 750px;
+  }
+  
+.carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0,0.2);
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+
+/*Create tour button*/
+#btn-maketour{
+  border-radius: 10px;
+  background-color: transparent;
+  border: solid 0.15em white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#btn-maketour:hover {
+  box-shadow:
+  inset 0 0 0.5vw 1px #fff,
+  0 0 0.5vw 1px #fff;
+  text-shadow:
+  0 0 10px rgba(255, 255, 255, 0.9);
+}
+
+
+@media (max-width:500px){
+  .page-header #btn-maketour{
+    scale: 0.7;
+  }
+}
+
+@media (max-width:1000px){
+  .page-header #btn-maketour{
+    scale: 0.8;
+  }
+}
+
+
+/*Search box modification*/
+@media (min-width: 768px) {
+  .searchbox-container {
+    position: relative;
+    margin-top: -150px !important;
+    z-index: 1;
+  }
+}
+
+.searchbox{
+  border-radius: 10px;
+  border:solid 0.1rem rgba(41, 76, 70)!important;
+  background-color: rgba(57, 112, 104,0.6);
+  border: solid 3px white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 1em;
+  font: "Nunito",sans-serif;
+  box-shadow: 
+  0 0 0.7vw 1px rgba(45, 88, 81, 0.6);
+
+}
+
+.searchbox-option{
+  height: 47px;
+  border-radius: 10px;
+  padding-left: 1.5em;
+}
+
+.btn-searchbox{
+  height: 47px;
+  border-radius: 10px;
+  background: rgba(200, 184, 138, 1);
+  color: white ;
+  border: 0px!important;
+}
+
+.btn-searchbox:hover{
+  background: rgb(170, 157, 118);
+  color:white;
+} 
+
+.btn:focus{
+  color: #fff;
+  background-color: rgb(200, 184, 138);
+  border-color: rgb(200, 184, 138);
+  box-shadow: 0 0 0 0.2rem rgba(200, 184, 138,0.3);
+}
+
+
+.btn-searchbox:not(:disabled):not(.disabled):active{
+  color: #fff;
+  background-color: rgb(200, 184, 138);
+  border-color: rgb(200, 184, 138);
+}
+.btn-searchbox:not(:disabled):not(.disabled):active:focus{
+  box-shadow: 0 0 0 0.2rem rgba(200, 184, 138,0.3);
+}
+
+@media (max-width:1000px){
+  .searchbox {
+    margin-top: 2em;
+  }
+}
+
+/*Tour packages modifications*/
+
+/*promo packages customize*/
+.promo-container .package-name, .promo-container .fa{
+  color: rgb(216, 156, 100)!important;
+}
+
+.promo-container .package-name:hover{
+  color: rgb(192, 138, 88)!important;
+}
+
+.promo-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(216, 156, 100);
+  color: white;
+  font-size: 1.3em;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.btn-book.promo{
+  background: rgb(216, 156, 100);
+}
+.btn-book.promo .fa{
+  color: white!important;
+}
+ .btn-book.promo:hover{
+  background: rgb(192, 138, 88);
+}
+
+/*view all button*/
+.btn-viewall{
+  position: relative;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  overflow: hidden;
+  box-shadow: 0 0px 5px transparent;
+  border-bottom: 4px solid white;
+  color: white;
+}
+a.btn-viewall:hover{
+  color: white;
+  
+}
+.btn-viewall:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+.btn-viewall:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.btn-viewall:hover:after{
+  left: 100%;
+}
+.btn-viewall span{
+  position: absolute;
+  display: block;
+  transition: 0.5s ease;
+}
+.btn-viewall span:nth-child(1)
+{
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.btn-viewall:hover span:nth-child(1)
+{
+  width: 100%;
+  transform: translateX(100%);
+}
+.btn-viewall span:nth-child(3)
+{
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.btn-viewall:hover span:nth-child(3)
+{
+  width: 100%;
+  transform: translateX(-100%);
+}
+.btn-viewall span:nth-child(2)
+{
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.btn-viewall:hover span:nth-child(2)
+{
+  height: 100%;
+  transform: translateY(100%);
+}
+.btn-viewall span:nth-child(4)
+{
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.btn-viewall:hover span:nth-child(4)
+{
+  height: 100%;
+  transform: translateY(-100%);
+}
+
+/************************************/
+/*regular package carousel customize*/
+/************************************/
+.product-type{
+  color: rgb(170, 157, 118);
+}
+
+.header-1{
+  color: rgba(41, 76, 70);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/*Package carousel customize*/
+.pack-custom-nav, .pack-custom-nav-promo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+.pack-custom-nav .owl-prev,.pack-custom-nav .owl-next, .pack-custom-nav-promo .owl-prev .owl-next{
+  height: 100px;
+  color: inherit;
+  background: none;
+  border: none;
+  z-index: 100;
+  position: absolute;
+}
+
+.tour-pack-container{
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+
+.pack-custom-nav.owl-nav, .pack-custom-nav-promo.owl-nav{
+  display: flex;
+  align-items: center;
+  height: 50%;
+}
+
+.owl-nav.i{
+  color: #cecece;
+  font-size: 2.5em;        
+}
+
+.pack-custom-nav .owl-prev, .pack-custom-nav-promo .owl-prev {
+  left: 0;
+}
+.pack-custom-nav .owl-next, .pack-custom-nav-promo .owl-next {
+  right: 0;
+}
+
+.tour-pack-carousel .owl-item{
+  max-width: 350px;
+}
+
+@media (min-width:1200px) {
+  .tour-pack-container .tour-pack-carousel-container{
+  max-width: 1168.4px;
+}
+}
+
+.tour-pack-carousel{
+  padding: 20px 30px;
+  overflow: hidden;
+}
+.tour-pack-carousel-container,.owl-stage-outer{
+  overflow: visible!important;
+}
+
+.tour-pack-carousel .owl-item:not(.active) > *{
+  opacity: 0%;
+}
+
+
+.tour-pack-container .owl-nav .fa{
+  color:rgb(41, 76, 70)
+}
+
+/* Carousel for promotion */
+.tour-pack-carousel-promo .owl-item{
+  max-width: 350px;
+}
+
+
+.tour-pack-carousel-promo{
+  padding: 20px 30px;
+  overflow: hidden;
+}
+.tour-pack-carousel-container,.owl-stage-outer{
+  overflow: visible!important;
+}
+
+.tour-pack-carousel-promo .owl-item:not(.active) > *{
+  opacity: 0%;}
+
+
+/*Package style customize*/
+.shadow{
+  box-shadow: 0rem 0.2rem 12px rgba(0, 0, 0,0.3)!important;
+}
+.tour-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 1rem;
+  color: gray;
+}
+
+.package-item{
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  transition: all 1s;
+  max-width: 350px;
+  margin:auto;
+  font-family: "Nunito";
+}
+
+.package-item:hover{
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+.package-item img{
+  height: 15em;
+}
+
+.package-item .fa{
+  color:rgb(80, 149, 138);
+}
+
+.package-item small{
+  color: gray;
+  font-size: 0.9em;
+}
+
+.package-name{
+  color:rgb(57, 112, 104);
+  font-family: "Julius sans one";
+  font-weight: 600;
+}
+
+a.package-name:hover{
+  color:rgb(41, 76, 70)!important;
+}
+
+.btn-book{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(80, 149, 138);
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  color: #F3F3F3;
+  border: 0;
+  padding: 0.7em!important;
+  font-size: 1.3em!important;
+}
+
+.btn-book:hover{
+  background: rgb(57, 112, 104);
+  color:white;
+}
+
+/*Destination + Travel theme packages modification*/
+.destination-item img {
+  transition: .5s;
+}
+
+
+.destination-item:hover img {
+  transform: scale(1.3);
+}
+
+.destination-item{
+  max-width: 300px;
+  height: 90%;
+  max-height: 400px;
+  border-radius: 20px;
+  margin:auto;
+}
+
+.destination-overlay {
+  position: absolute;
+  border-radius: 20px;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 59, 59, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: .5s;
+  z-index: 1;
+}
+
+
+.theme-overlay {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  z-index: 1;
+}
+
+.destination-item:hover .destination-overlay {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-width: 30px;
+}
+
+@media (max-width: 1200px) {
+  h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw) ;
+  }
+}
+
+/*Testimonial modification*/
+.testimonial-carousel .owl-dots {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background: #DDDDDD;
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  width: 40px;
+  background: rgb(57, 112, 104);
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+  color: white;
+}
+
+.testimonial-carousel .owl-item.center .text-center{
+  transform: scale(1.1);
+  font-size: 1.1em;
+  padding-top: 5%!important;
+  transition: all 0.3s ease-out;
+}
+
+.img-testimonial{
+  border-radius: 100%;
+}
+.testimonial-carousel{
+  overflow-x: hidden;
+}
+
+.testimonial-text{
+  color: gray;
+  font-size: 0.9em!important;
+  background-color: rgba(41, 76, 70);
+  border-radius: 15px;
+  font-family: "Nunito";
+}
+
+.testimonial-carousel.owl-carousel .owl-stage-outer{
+  overflow: visible!important;
+  height: 350px;
+}
+
+/*Service modification*/
+.service-item{
+  background: transparent;
+  border: solid 1px rgba(41, 76, 70);
+  color: rgba(41, 76, 70);
+  font-family: "Nunito";
+}
+
+.service-item .fa{
+  background: rgba(57, 112, 104, 0.4);
+  border-radius: 100%;
+  padding: 0.6em;
+}
+
+/*footer modification*/
+.footer-container{
+  background: rgba(41, 76, 70);
+}
+
+.footer-container .text-uppercase{
+  color: rgba(200, 184, 138, 1);
+}
+
+.footer-container h5{
+  font-size: 1.25em;
+} 
+.social-media .btn-outline{
+  border: 1px solid rgb(200, 184, 138);
+  color:rgb(200, 184, 138);
+}
+
+.social-media .btn-outline:hover{
+  background: rgb(170, 157, 118);
+  color:white;
+}
+
+.footer-menu-items a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-menu-items a:hover{
+  color: gainsboro;
+}
+
+.newsletter-button{
+  background-color: rgb(200, 184, 138);
+  color: rgba(41, 76, 70);
+}
+
+
+/*Back to top button*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 11;
+  color: white;
+  background: rgb(216, 156, 100);
+  border: 0px;
+}
+.back-to-top:hover {
+  background: rgb(192, 138, 88);
+}
+.back-to-top:active {
+  background: rgb(200, 184, 138)!important;
+  border: 0px;
+  box-shadow:
+  inset 0 0 0.5vw 1px rgb(192, 138, 88),;
+}
+
+
+/*************************************************************************************************************************************************/
+/*Destination page*/
+/*************************************************************************************************************************************************/
+
+/*Left column*/
+.filter{
+  background: transparent;
+  border: solid 1px rgba(41, 76, 70);
+  color: rgba(41, 76, 70);
+  font-family: "Nunito";
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.filter-heading{
+  color: rgb(41, 76, 70);
+  font-size: larger;
+}
+.filter-criterea.dark{
+  background-color: rgba(89, 109, 111, 1);
+  color: rgb(218, 201, 150)
+}
+.filter-criterea{
+  color: rgb(41, 76, 70);
+  padding: 10px;
+  border: 0;
+}
+
+.filter-criterea h3{
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.filter-criterea >{
+  padding-bottom: 50px;
+}
+
+.filter-criterea .collapse-filter{
+  font-size: 1em;
+  color: rgb(218, 201, 150);
+  background-color: transparent;
+  border: 0;
+  float:right;
+}
+
+  /* Style the checkbox */
+/* The container */
+.filter-criterea .btn-custom {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.filter-criterea .btn-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.filter-criterea .checkmark {
+  position: absolute;
+  top: .2em;
+  left: .2em;
+  height: 1em;
+  width: 1em;
+  background-color: transparent;
+  border: 1px solid rgb(41, 76, 70);
+  border-radius: 100%;
+}
+.filter-criterea.dark .checkmark{
+  border: 1px solid rgb(218, 201, 150);
+}
+
+
+/* On mouse-over, add a grey background color */
+.filter-criterea .btn-custom:hover input ~ .checkmark {
+  background-color: rgba(170, 157, 118,0.5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter-criterea .btn-custom input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter-criterea .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.filter-criterea .btn-custom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark indicator */
+.filter-criterea .btn-custom .checkmark:after {
+  top: -0.5em;
+  left: 0.05em;
+  border-radius: 100%;
+  border: 0;
+  content: "✓";
+  font-size: 1.3em;
+}
+
+
+/*Right column*/
+/*Package*/
+.package-big{
+  background: transparent;
+  border: solid 1px rgba(41, 76, 70);
+  color: rgba(41, 76, 70);
+  font-family: "Nunito";
+  margin-bottom: 30px;
+  color: gray;
+}
+
+/*Package content column 2*/
+.package-big .column-2 > div{
+  margin-bottom: 1em;
+}
+.package-big .column-2 small{
+  margin-right: 1em;
+}
+
+/*Package content column 3*/
+.package-big .column-3 {
+  border-left: 1px solid rgb(41, 76, 70);
+  float: right;
+  }
+.package-big .column-3 p{
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.package-big .column-3 .price{
+  font-size: 1.4em;
+  color: rgb(192, 138, 88);
+}
+
+/*Booking button*/
+.package-big .column-3 .btn-book{
+  border-radius: 10px;
+  background-color: transparent;
+  color: rgb(192, 138, 88);
+  border: solid 1px rgb(192, 138, 88);
+}
+.package-big .column-3 .btn-book .fa{
+  color: rgb(192, 138, 88)!important;
+}
+.package-big .column-3 .btn-book:hover{
+  box-shadow: 0 0 0.5vw 1px rgb(192, 138, 88);
+}
+.package-big .column-3 .text-center{
+  padding: 5% 10%;
+}
+
+@media (max-width: 920px){
+  .column-3{
+    border-top: 1px solid rgb(41, 76, 70)!important;
+    border-left:0px !important;
+  }
+}
+/*Pagination*/ 
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: gray;
+  background-color: #cecece;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: rgb(41, 76, 70);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: rgba(45, 88, 81, 0.6);color: white;}
+
+/*************************************************************************************************************************************************/
+/*Tour detail page*/
+/*************************************************************************************************************************************************/
+.tour-description-long{
+  font-family: "Nunito", "sans-serif";
+  margin-top: 1em;
+  font-weight: lighter;
+  font-size: 1em;
+}
+.tour-detail .left-column h2{
+  font-size: 2em;
+  font-weight: bold;
+}
+.tour-detail .map-marker{
+  color: gray;
+}
+
+.tour-detail hr{
+  border-top-color: rgb(41, 76, 70);
+}
+
+.tour-detail h3{
+  color: rgb(41, 76, 70);
+}
+
+.content-container{
+  font-family: "Nunito", "sans-serif";
+  margin-top: 1em;
+}
+
+/*Itinerary*/
+.tour-detail .day-container .collapse-tour-detail-heading{
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(41, 76, 70);
+  color: white;
+  text-align: start;
+  font-weight: lighter;
+  border: 0;
+  padding: 10px;
+}
+
+
+.collapse-tour-detail-heading h4{
+  font-family: "Nunito", "sans-serif";
+  font-weight: lighter;
+  font-size: 1em;
+  margin:0;
+}
+.collapse-tour-detail-heading .fa{
+  font-size: medium;
+  float: right;
+  margin-top: 2px;
+}
+
+.day-container {
+  background-color: gainsboro;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.collapse-tour-detail-content{
+  font-family: "Nunito";
+  color: gray;
+  font-size: 1em;
+  padding: 10px;
+}
+
+/*icon switching*/
+.collapse-tour-detail-heading .fa-minus,
+.collapse-tour-detail-heading.collapsed .fa-plus {
+    display: inline-block;
+}
+.collapse-tour-detail-heading.collapsed .fa-minus,
+.collapse-tour-detail-heading .fa-plus {
+    display: none;
+}
+
+/*faq*/
+.tour-detail .faq-container .collapse-tour-detail-heading{
+  width: 100%;
+  border-radius: 10px;
+  text-align: start;
+  font-weight: lighter;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.faq-container{
+  margin-bottom: 10px;
+}
+
+.collapse-tour-detail-heading h4{
+  font-family: "Nunito", "sans-serif";
+  font-weight: lighter;
+  font-size: 1em;
+  margin:0;
+}
+.collapse-tour-detail-heading .fa{
+  font-size: medium;
+  float: right;
+  margin-top: 2px;
+}
+
+.day-container {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+.collapse-tour-detail-content{
+  font-family: "Nunito";
+  color: gray;
+  font-size: 1em;
+  padding: 10px;
+}
+
+/*Right column*/
+.sticky{
+  position: sticky;
+  top: 1em;
+}
+
+.tour-detail .price{
+  font-weight: bold;
+}
+
+.booking-table{
+  border: 1px solid rgb(41, 76, 70);
+  font-family: "Nunito";
+}
+
+@media (max-width:1000px){
+  .booking-table{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .price{
+    margin-top: 1rem;
+  }
+}
+
+/*booking section*/
+.booking-table hr{
+  border-top: solid 1px rgb(41, 76, 70);
+  margin:0;
+  margin-bottom: 10px;
+  padding:0;
+  width: 100%;
+}
+
+.slot{
+  border: 1px solid rgb(41, 76, 70);
+  margin: 10px;
+  border-radius: 10px;
+}
+.slot button{
+  border: 0;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;  
+}
+
+/*travelers signing table*/
+.traveler-signing-container{
+  border-top: 1px solid rgb(41, 76, 70);
+}
+.travelers-signing{
+  border: 1px solid rgb(41, 76, 70,0.5);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-width: 30%;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.travelers-signing button{
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 100%;
+  background-color: rgb(41, 76, 70);
+  margin: 0 auto;
+  color: white;
+}
+
+.travelers-signing .button-plus{
+  float: right;
+  margin-right: 0;
+}
+
+.travelers-signing .button-minus{
+  float: left;
+  margin-left: 0;
+}
+
+.travelers-signing input{
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  max-width: 40%;
+  height: 2em;
+}
+
+/*button book*/
+.booking-table .btn-book{
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.right-column #btn-maketour{
+  width: 100%;
+  color: white;
+  background-color: rgb(170, 157, 118);
+  border: none;
+  border-radius: 0;
+  padding: 1em;
+  margin-top: 10px;
+}
+
+.right-column #btn-maketour:hover{
+  box-shadow:none;
+  background-color: rgb(150, 138, 104);
+  text-shadow: none;
+}
+
+
+/*************************************************************************************************************************************************/
+/*Payment page*/
+/*************************************************************************************************************************************************/
+/*left column*/
+.payment-heading{
+  color:rgb(57, 112, 104);
+  font-family: "Julius sans one";
+  font-weight: 600;
+}
+
+.payment .content-container{
+  background: transparent;
+  border: solid 2px rgb(200, 184, 138);
+  color: rgba(41, 76, 70);
+  font-family: "Nunito";
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.payment .left-column .row{
+  margin: auto;
+  font-family: "Nunito";
+  padding: 10px 0px;
+  margin-bottom: 1.5em;
+}
+
+.payment table{
+  color: black;
+  width: 100%;
+}
+.payment th{
+  border: 0;
+  padding: .3em 0 .3em 0!important;
+}
+
+.info-form h3{
+  font-weight: bolder;
+  color: black;
+  font-family: "Julius sans one";
+  margin-bottom: 0;
+}
+
+
+.payment #dial-code{
+  min-width: 105px;
+  width: 30%;
+}
+.payment #contact-number{
+  width: 70%;
+}
+
+.payment #payment-method{
+  padding-bottom: .1em;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 0.2rem rgba(200, 184, 138, 0.4);
+  border: rgb(200, 184, 138);
+}
+
+.payment #promo-code{
+  border-radius: .25rem 0 0 .25rem;
+}
+
+.payment #apply-code{
+  border-radius: 0 .25rem .25rem 0;
+  border: 0;
+}
+
+#payment-final{
+  color: black;
+}
+
+#payment-final hr{
+  max-width: 60%;
+}
+
+/*right column*/
+#tour-info{
+  color: gray
+}
+
+#tour-info tr > :first-child{
+  text-align: center;
+}
+
+#tour-info tr > :nth-child(2){
+  padding-left: 5px;
+}
+
+.error{
+  font-weight: lighter;
+  font-size: .9em;
+  color: red;
+  display: block;
+}
+
+/* Modal customization */
+.modal .close, .modal .others{
+  border-radius: 10x;
+}
+
+.modal .btn-close{
+  background-color: crimson;
+}
+
+.modal .btn-close:hover{
+  background-color: rgb(162, 13, 43);
+}
+
+/*************************************************************************************************************************************************/
+/*Personalisation page*/
+/*************************************************************************************************************************************************/
+/*left column*/
+.perso-heading{
+  color:rgb(57, 112, 104);
+  font-family: "Julius sans one";
+  font-weight: 600;
+}
+
+.perso .content-container{
+  background: transparent;
+  border: solid 2px rgb(200, 184, 138);
+  color: rgba(41, 76, 70);
+  font-family: "Nunito";
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.perso .perso-form > .row{
+  margin: auto;
+  font-family: "Nunito";
+  padding: 10px 0px;
+  margin-bottom: 1.5em;
+}
+
+.perso table{
+  color: black;
+  width: 100%;
+}
+.perso th{
+  border: 0;
+  padding: .3em 0 .3em 0!important;
+}
+
+.perso #dial-code{
+  width: 30%;
+}
+.perso #contact-number{
+  width: 70%;
+}
+
+
+
+
+/*************************************************************************************************************************************************/
+/*Blog page*/
+/*************************************************************************************************************************************************/
+.blog .post.featured{
+  width: 25%;
+  transition: 0.2s ease-in-out;
+}
+
+.blog .post.featured:hover{
+  width: 40%;
+}
+
+
+.destination-item:hover img {
+  transform: scale(1.1);
+}
+
+.destination-item{
+  max-width: 300px;
+  height: 90%;
+  max-height: 400px;
+  border-radius: 20px;
+  margin:auto;
+}
+
+.post-overlay {
+  position: absolute;
+  padding: 10px;
+  border-radius: 20px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: rgba(59, 59, 59, 0.2);
+  z-index: 1;
+}
+
+
+.destination-item:hover .destination-overlay {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-width: 30px;
+}
+
+
+
+/*************************************************************************************************************************************************/
+/*About page + Contact page*/
+/*************************************************************************************************************************************************/
+@media (min-width: 992px) {
+  .about-text {
+    margin-left: -120px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .left-side th{
+    padding-left: 0px;
+  }
+  .right-side th{
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  table{
+    width: 100%;
+  }
+}
+
+#message {
+  color: rgb(41, 76, 70);
+}
+
+#message .form-control{
+  background-color: transparent;
+  margin: .3em auto;
+}
+
+#message .form-control:focus{
+  border-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
+
+#other .btn-outline{
+  border: 1px solid rgb(200, 184, 138);
+  color:rgb(200, 184, 138);
+}
+
+#other .btn-outline:hover{
+  background: rgb(170, 157, 118);
+  color:white;
+}
+
+#submit-message{
+  font-size: 1em;
+  width: 20%;
+  min-width: 95px;
+  background-color: rgb(41, 76, 70);
+}
+#submit-message:hover{
+  background-color: rgb(26, 49, 46);
+}
